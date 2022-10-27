@@ -30,6 +30,22 @@ body {
   padding: 5rem;
 }
 
+h1::before {
+  content: open-quote;
+  font-size: 8rem;
+  top: 8rem;
+}
+h1::after {
+  content: close-quote;
+  font-size: 8rem;
+  top: 15rem;
+  position: absolute;
+}
+
+h3:first-of-type {
+  margin-top: 5rem;
+}
+
 .circle-container {
   position: absolute;
   width: 5rem;
