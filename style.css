@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #bc6c25;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+}
+.content {
+  width: 100%;
+  background-color: #283618;
+  padding: 5rem;
+}
+
+.circle-container {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  left: 0;
+}
+
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#close {
+  visibility: hidden;
+}
+
+.move {
+  transform: translate(10%);
+  transition: all 1s;
+}
+
+.move-again {
+  transform: translate(0%);
+  transition: all 1s;
+}
+
+.options {
+  margin-top: 5rem;
+  position: absolute;
+  left: -10%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.options div {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.options div:hover {
+  color: antiquewhite;
+  cursor: pointer;
+  background-color: #dda15e;
+}
